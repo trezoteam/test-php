@@ -1,42 +1,13 @@
 # Desafio para Vaga de Backend PHP
 
 ## Vem ser #TrezoTeam!
-Nosso café está sempre fresquinho, nosso almoço tem comida caseira preparada com muito amor e carinho e ainda temos lanche a tarde!
-Estamos procurando alguém que:
-* Tenha boa comunicação e empatia
-* Goste de aprender
-* Tenha auto motivação e pro-atividade
-* Consiga se virar bem no inglês
-* Talvez tenha noções de e-commerce
-* Pense grande ;)
-
-Encaminhe seu currículo para vagas@trezo.com.br e coloque no assunto **“Quero ser #TrezoTeam“**, anexado com a proposta salarial.
-
-
-## Skill's necessários:
-
-* Conhecimento em php 5.6+ (ou php 7.0)
-* Conhecimento em mysql ou postresql
-* Conhecimento javascript (ajax, jquery)
-* Conhecimento mais avançado do uso do git (merge, rebase, stash, branch, tag, cherry­pick)
-* Consolidado conhecimento em: orientação a objetos, padrão mvc e design patterns
-* Conhecimento de arquitetura de software, princípios solid e refatoração
-* Conhece sobre o grupo de interoperabilidade entre frameworks (php-fig) e suas recomendações (psrs)
-* Consegue analisar um problema, pensando nas necessidades a serem contempladas computacionalmente, trazendo soluções viáveis
-* Morar ou estar disposto a mudar-se para Blumenau/SC
-
-
-## Diferênciais:
-
-* Conhecimentos avançados de algum framework mvc
-* Conhecimento na plataforma Magento
-* Conhecimento ou participação em projetos com desenvolvimento web sendo em php ou não
-* O que utilizamos: php, magento, sass, docker, aws, git, mysql
-
+Nosso café está sempre fresquinho e ainda temos lanche a tarde! E sabemos que você tem muito a contribuir com a nossa equipe. ;)
+Faça parte da nossa família #TrezoTeam!
 
 ## Sobre o Teste:
 
 Desenvolver um sistema de **QUIZ**, utilizando apenas **PHP, Mysql ou PostgreSQL, HTML e CSS**.
+A utilização de um **framework PHP** é bem vinda.
 Requisitos do sistema:
 
 * Utilizar bootstrap (apenas para não deixar o layout feio, mas a avaliação do layout não será premissa)
@@ -54,8 +25,12 @@ Requisitos do sistema:
 * > Ao finalizar o QUIZ, deverá ser registrado o horário fim do QUIZ
 * > Terá que cadastrar cada resposta realizada pelo usuário (para poder visualizar em relatório administrativo)
 
+* **O Sistema deverá ser hospedado e configurado em um servidor a sua escolha**
+* Recomendamos hospedar na https://www.openshift.com/ que possui uma aplicação **FREE** a ser publicada
+* Nos envie o link publicado
 
-**Nossas espectativas:**
+
+### Nossas espectativas:
 
 Não esperamos que você faça tudo 100% ou que gaste dias para fazer o teste. Esperamos apenas um pouco de capricho pelo menos na lógica, funcionalidade (se há uma tela de cadastro, ela tem que funcionar), e organização do código.
 Não se preocupe com o LAYOUT, será o item menos importante da avaliação, apenas sugerimos utilizar o bootstrap para que também não fique feio demais, porém o principal é avaliar a aptidão lógica para resolver o problema anunciado.
@@ -66,17 +41,17 @@ Oriente no README.md sobre informações necessárias para rodar o sistema, como
 * Login e senha do sistema admin ou como fazer para criar este acesso
 
 
-**O que avaliaremos:**
+### O que avaliaremos:
 
-* Capricho no código (PSR)
+* Capricho no código
+* Seguir as indicações de PSR-FIG, ao menos de formatação de código
 * Se foi ou não utilizado algum Design Pattern
 * Aptidão Lógica para resolver problemas
 * Organização no código
-* Preferencialmente, ćodar em inglês!
-* Gambiarras é uma necessidade, mas não exagere! Se possível, comente o trecho de código do por que fez aquilo
+* Codar em inglês!*
 
 
-**Diferenciais:**
+### Diferenciais:
 
 * PHPDocs nos métodos e classes
 * Melhores orientações ou explicações como foi construído a lógica do sistema
