@@ -12,6 +12,18 @@ Documentação: http://docs.frenetapi.apiary.io/#reference/shipping/quote/post
 * ⋅⋅⋅ Credenciais API
 * Como configuração Default deve-se vir preenchido todos os campos do pagamento
 * ⋅⋅⋅ As credenciais API devem vir configuradas no Default do módulo para seu funcionamento sem a necessidade de configurá-lo
+* Faça o rastreio do objeto também utilizando a API da Frenet
+
+### O que avaliaremos:
+
+* Seguir o padrão do que o Magento oferece
+* Estrutura do módulo
+* Capricho no código
+* Seguir as indicações de PSR-FIG, ao menos de formatação de código
+* Se foi ou não utilizado algum Design Pattern
+* Aptidão Lógica para resolver problemas
+* Organização no código
+* Codar em inglês!*
 
 
 API KEY: testando_key
@@ -19,3 +31,4 @@ API KEY: testando_key
 API PASS: YOsap9Y2yDAUVJqAOQGtJA==
 
 API TOKEN: 8713E4FBR8EFCR4D61R9FDER4045FBF8721C
+

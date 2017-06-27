@@ -13,3 +13,14 @@ Documentação: https://www.pagueveloz.com.br/Help
 * ⋅⋅⋅ Credenciais API
 * Como configuração Default deve-se vir preenchido todos os campos do pagamento
 * ⋅⋅⋅ As credenciais API devem vir configuradas no Default do módulo para seu funcionamento sem a necessidade de configurá-lo
+
+### O que avaliaremos:
+
+* Seguir o padrão do que o Magento oferece
+* Estrutura do módulo
+* Capricho no código
+* Seguir as indicações de PSR-FIG, ao menos de formatação de código
+* Se foi ou não utilizado algum Design Pattern
+* Aptidão Lógica para resolver problemas
+* Organização no código
+* Codar em inglês!*
