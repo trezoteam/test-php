@@ -2,8 +2,15 @@
 
 ## Vem ser #TrezoTeam!
 Nosso café está sempre fresquinho, nosso almoço tem comida caseira preparada com muito amor e carinho e ainda temos lanche a tarde!
-Estamos procurando alguém que: Tenha boa comunicação e empatia; Goste de aprender; Tenha auto motivação e pro-atividade; Consiga se virar bem no inglês; Talvez tenha noções de e-commerce; Pense grande ;)
-Encaminhe seu currículo para vagas@trezo.com.br e coloque no assunto “Quero ser #TrezoTeam“, anexado com a proposta salarial.
+Estamos procurando alguém que:
+* Tenha boa comunicação e empatia
+* Goste de aprender
+* Tenha auto motivação e pro-atividade
+* Consiga se virar bem no inglês
+* Talvez tenha noções de e-commerce
+* Pense grande ;)
+
+Encaminhe seu currículo para vagas@trezo.com.br e coloque no assunto **“Quero ser #TrezoTeam“**, anexado com a proposta salarial.
 
 
 ## Skill's necessários:
@@ -34,18 +41,18 @@ Requisitos do sistema:
 
 * Utilizar bootstrap (apenas para não deixar o layout feio, mas a avaliação do layout não será premissa)
 * O sistema terá um sistema administrativo para visualizar as respostas e cadastros de quiz.
-** Terá controle de login e senha (pode ser um login e senha fixo: trezo|senha)
-*** Deve-se informar login e senha para acesso administrativo no README.md
-** Terá o cadastro do QUIZ com: name, description, created_at, updated_at
-** Terá o cadastro das questões: subject, quiz_id, type, created_at, updated_at
-** Terá o cadastro das opções de respostas (quando o type for multipla escolha): answer, is_correct, question_id, created_at, updated_at
-** Terá visualização das respostas realizadas pelos usuários com o total de respostas, acertos e erros. (relatório)
+* > Terá controle de login e senha (pode ser um login e senha fixo: trezo|senha)
+* >> Deve-se informar login e senha para acesso administrativo no README.md
+* > Terá o cadastro do QUIZ com: name, description, created_at, updated_at
+* > Terá o cadastro das questões: subject, quiz_id, type, created_at, updated_at
+* > Terá o cadastro das opções de respostas (quando o type for multipla escolha): answer, is_correct, question_id, created_at, updated_at
+* > Terá visualização das respostas realizadas pelos usuários com o total de respostas, acertos e erros. (relatório)
 * O sistema terá uma home pública com a listagem de todos os QUIZ cadastrados
-** Terá a página do QUIZ que todas as suas questões
-*** Para iniciar o QUIZ o usuário deve informar nome e e-mail
-** Ao iniciar o QUIZ, deverá ser registrado o horário de início do QUIZ
-** Ao finalizar o QUIZ, deverá ser registrado o horário fim do QUIZ
-** Terá que cadastrar cada resposta realizada pelo usuário (para poder visualizar em relatório administrativo)
+* > Terá a página do QUIZ que todas as suas questões
+* >> Para iniciar o QUIZ o usuário deve informar nome e e-mail
+* > Ao iniciar o QUIZ, deverá ser registrado o horário de início do QUIZ
+* > Ao finalizar o QUIZ, deverá ser registrado o horário fim do QUIZ
+* > Terá que cadastrar cada resposta realizada pelo usuário (para poder visualizar em relatório administrativo)
 
 
 **Nossas espectativas:**
@@ -74,7 +81,7 @@ Oriente no README.md sobre informações necessárias para rodar o sistema, como
 * PHPDocs nos métodos e classes
 * Melhores orientações ou explicações como foi construído a lógica do sistema
 * Demonstrar no sistema algum conhecimento de API
-** Exemplo: Fazer com que o cadastro das respostas dos QUIZs aconteçam via API
+* > Exemplo: Fazer com que o cadastro das respostas dos QUIZs aconteçam via API
 
 
 Criatividade para novas funcionalidades, não descritas acima, valerão pontos. Sinta-se a vontade nesse quesito para fluir suas habilidades.
