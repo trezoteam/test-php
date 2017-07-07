@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="frenet_config_tab" translate="label" sortOrder="1000">
+            <label>Frenet Settings</label>
+        </tab>
+
+        <section id="frenet_general" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>General</label>
+            <tab>frenet_config_tab</tab>
+            <resource>Marcoaag_Frenet::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Module Settings</label>
+                <field id="mod_status" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+
+                <field id="delivery_type" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Type</label>
+                </field>
+
+                <field id="additional_days" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Additional Days after the delivery date shown in quotation</label>
+                    <comment>Only integer numbers are allowed</comment>
+                    <validate>validate-integer</validate>
+                </field>
+
+            </group>
+        </section>
+
+        <section id="frenet_api" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>API Settings</label>
+            <tab>frenet_config_tab</tab>
+            <resource>Marcoaag_Frenet::config</resource>
+            <group id="api" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>API Settings</label>
+
+                <field id="api_key" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API key</label>
+                </field>
+
+                <field id="api_pass" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Password</label>
+                </field>
+
+                <field id="api_token" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Token</label>
+                </field>
+
+                <!--field id="textarea_example" translate="label" type="textarea" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Textarea example</label>
+                </field-->
+            </group>
+        </section>
+    </system>
+</config>
