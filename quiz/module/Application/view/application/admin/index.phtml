@@ -1,0 +1,77 @@
+<?
+    $this->inlineScript()
+        ->appendFile($this->basePath('js/controller/admin/index.js'));
+
+?>
+<section ng-app="AppAngular" ng-controller="adminQuizController">
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <h5>List quiz</h5>
+            <table class="table table-bordered" ng-show="arrQuiz" >
+                <thead>
+                    <th>#ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th></th>
+                </thead>
+
+                <tbody ng-repeat="(key, value) in arrQuiz">
+                    <tr>
+                        <td>
+                            {{value.id}}
+                        </td>
+                        <td>
+                            {{value.name}}
+                        </td>
+                        <td>
+                            {{value.description}}
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" ng-click="setEdit(value)">Edit</button>
+                            <a href="/admin/question/{{value.id}}" class="btn btn-sm btn-warning">Options</a>
+                            <button class="btn btn-sm btn-success">answers</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a class="btn btn-primary" data-toggle="modal" href='#formQuiz'>Create new</a>
+    <div class="modal fade" id="formQuiz">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Create new quiz</h4>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" ng-model="objQuiz.name" class="form-control" name="">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea ng-model="objQuiz.description" class="form-control" name=""></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="clearForm()">Close</button>
+                    <button type="button" class="btn btn-primary" ng-click="saveQuiz()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
