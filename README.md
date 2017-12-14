@@ -8,3 +8,6 @@
 * Rodar o comando "php artisan key:generate"
 * criar um virtualhost e colocar o endereço no hosts para acessar a aplicação ou rodar "php artisan serve" na pasta da aplicação e acessar oendereço gerado.
 * Entrando na Aplicação acesar a rota /register para criar um novo usuário
+
+#Endereço do sistema publicado
+* https://dry-basin-37120.herokuapp.com/
