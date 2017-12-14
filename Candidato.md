@@ -1,9 +1,9 @@
-Nome Completo: Luiz Boça
+Nome Completo: Luan Carlos Schmitz
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: luan_c_schmitz@outlook.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: www.linkedin.com/in/luancschmitz
 
-Telefone: (44) 4444-4444
+Telefone: (49) 3325-1500
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Portfólio (Opicional): https://github.com/luancschmitz
