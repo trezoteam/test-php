@@ -1,55 +1,37 @@
-Yii 2 Advanced Project Template
-===============================
+# Desafio para Vaga de Backend PHP
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+## Teste realizado utilizando o framework Yii2
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+## Sobre o Teste:
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+Todo o teste foi realizado em PHP, portanto algumas telas ficariam melhor com uso de Javascript.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
 
-DIRECTORY STRUCTURE
--------------------
+* O SGBD utilizado foi o PostgreSQL, porém, toda a estrutura do Banco foi feita com Migrations.
+Para utilizar Migrations, apenas o comando 'yii/migrate' é necessário
+* Visualmente, como sugerido, foi utilizado somente Bootstrap nativo do Yii2
+* Sobrescritas para URL's mais amigáveis realizadas(.htaccess) 
+* O fluxo do sistema para o USUÁRIO funciona da seguinte forma:
+* > Usuário escolhe um Quiz para respoder;
+* > Fornece Nome e E-mail;
+* > Reponde as perguntas(Múltipla Escolha ou Descursiva) e Envia;
+* > Mensagem de conclusão do Quiz é exibida.
+* O fluxo do sistema para o ADMIN funciona da seguinte forma:
+* > Admin cria novo Quiz;
+* > Uma tela com a possibilidade de inserir uma ou mais perguntas;
+* > Após inserir as perguntas, poderá selecionar uma pergunta e realizar a criação das respostas(Múltipla Escolha)
+* >> Para a área admin utilizar o Login: 'trezo' e Senha: '123456'
+* >> Área admin disponivel em 'SEVER/trezo/admin'
+* Uma API simples foi criada para exemplificação de exibição e cadastro de Informações:
+* > Uma controller a parte foi criada para este propósito;
+* > Apenas com autenticação via Bearer Token será possível realizar ações na API;
+* > Informações de autenticação de API presente na Área ADmin do sistema;
+* Apenas um relatório criado, visando abranger mais funcionalidades no sistema, como API
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+### Hospedagem
+* Sistema está hospedado em: www.notarweb.com.br/trezo
+* Área admin: www.notarweb.com.br/trezo/admin
+* Servidor Ububtu 16.04, Apache 2.4, PHP 7.0
+
+* Obrigado!
