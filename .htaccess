@@ -1,0 +1,9 @@
+# prevent directory listings
+Options -Indexes
+IndexIgnore */*
+
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+RewriteRule ^admin(/.+)?$ backend/web/site [L,PT]
+RewriteRule ^(/.+)?$ frontend/web/site [L,PT]
