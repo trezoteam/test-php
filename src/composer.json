@@ -1,0 +1,17 @@
+{
+    "name": "pspaulo/quiz",
+    "description": "Sistema de Quiz Trezo",
+    "authors": [
+        {
+            "name": "Paulo Sergio Pereira",
+            "email": "web.paulosergio@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "../app/",
+            "Src\\": "../src/"
+        }
+    }
+}
