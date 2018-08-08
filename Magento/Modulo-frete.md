@@ -23,7 +23,7 @@ Documentação: http://docs.frenetapi.apiary.io/#reference/shipping/quote/post
 * Se foi ou não utilizado algum Design Pattern
 * Aptidão Lógica para resolver problemas
 * Organização no código
-* Codar em inglês! *
+* Codar em inglês! 
 
 
 API KEY: testando_key
