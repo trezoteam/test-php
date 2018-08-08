@@ -4,6 +4,7 @@ Documentação: http://docs.frenetapi.apiary.io/#reference/shipping/quote/post
 
 ## Sobre o Teste:
 * Forma de entrega para Magento (cotação de frete)
+* Livre escolha sobre a versão do Magento, porém a última (Magento 2.x) é a mais indicada
 * Deve-se exibir no magento como opção de frete as cotações retornadas pela Frenet
 * Deve-se conter na configuração do módulo:
 * ⋅⋅⋅ Ativar/Desativar
