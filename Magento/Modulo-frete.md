@@ -1,8 +1,15 @@
 # Módulo de Fretes (Frenet)
 
+## Vem ser #TrezoTeam!
+Nosso café está sempre fresquinho e ainda temos lanche a tarde! E sabemos que você tem muito a contribuir com a nossa equipe. ;)
+Faça parte da nossa família #TrezoTeam!
+
 Documentação: http://docs.frenetapi.apiary.io/#reference/shipping/quote/post
 
 ## Sobre o Teste:
+
+Destina-se ao desenvolvedor que já conheça a plataforma Magento e já tenha alguma experiência com a mesma.
+
 * Forma de entrega para Magento (cotação de frete)
 * Livre escolha sobre a versão do Magento, porém a última (Magento 2.x) é a mais indicada
 * Deve-se exibir no Magento como opção de frete as cotações retornadas pela Frenet
