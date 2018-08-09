@@ -33,3 +33,8 @@ API PASS: YOsap9Y2yDAUVJqAOQGtJA==
 API TOKEN: 8713E4FBR8EFCR4D61R9FDER4045FBF8721C
 
 Você também poderá obtê-las através de um cadastro na Frenet de avaliação gratuita em https://painel.frenet.com.br/Pages/Register.aspx
+
+
+Para participar basta fazer um Fork desse repositório e codar, após a conclusão enviar um pull-request com suas informações adicionadas no arquivo Candidato.md.
+
+Boa sorte!
