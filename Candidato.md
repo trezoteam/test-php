@@ -1,9 +1,9 @@
-Nome Completo: Luiz Boça
+Nome Completo: Aislan Cedraz
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: aislan.cedraz@gmail.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: https://www.linkedin.com/in/aislan-cedraz-5302a953/
 
-Telefone: (44) 4444-4444
+Telefone: (47) 997215473
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Portfólio (Opicional): http://ainvengenharia.rf.gd/DWV/ ou https://github.com/acedraz
