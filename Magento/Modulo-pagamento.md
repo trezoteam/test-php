@@ -1,6 +1,7 @@
 # Módulo de Boleto
 
 Documentação: https://www.pagueveloz.com.br/Help
+Cadastro Sandbox para testes e geração da chave de autenticação: https://sandbox.pagueveloz.com.br/
 
 ## Sobre o Teste:
 * Forma de pagamento de boleto no magento
