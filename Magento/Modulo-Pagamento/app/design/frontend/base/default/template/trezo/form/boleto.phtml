@@ -1,0 +1,9 @@
+<div class="form-list payment-container" id="payment_form_<?php echo $this->getMethodCode() ?>" style="display:none;">
+	<li>
+        <?php if ($_instructions = $this->getInstructions()): ?>
+            <div class="<?php echo $this->getMethodCode() ?>-instructions-content">
+                <?php echo nl2br($_instructions) ?>
+            </div>
+        <?php endif; ?>
+    </li>
+</div>

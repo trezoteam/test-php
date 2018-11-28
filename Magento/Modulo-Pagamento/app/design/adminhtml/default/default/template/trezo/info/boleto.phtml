@@ -1,0 +1,13 @@
+<?php
+/**
+ *
+ * @category   Trezo
+ * @package    Trezo_Payments
+ * @author     Rone Clay Santos <https://github.com/roneclay>
+ */
+?>
+<?php $boleto_url = Mage::helper('trezo_payments')->getOrderBoletoUrl( $this->getInfo()->getData('parent_id') ) ?>
+<strong><?php echo $this->htmlEscape($this->getMethod()->getTitle()) ?></strong>
+<?php if($boleto_url): ?>
+	<a href="<?php echo $boleto_url ?>" target="_blank"><?php echo $this->__('Print Boleto') ?></a>
+<?php endif ?>
