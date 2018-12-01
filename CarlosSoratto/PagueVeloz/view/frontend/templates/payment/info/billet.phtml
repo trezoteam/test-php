@@ -1,0 +1,28 @@
+<?php
+
+$specificInfo = $block->getSpecificInformation();
+$title = $block->escapeHtml($block->getMethod()->getTitle());
+?>
+<dl class="payment-method">
+    <dt class="title"><?php /* @noEscape */ echo $title; ?></dt>
+    <?php if ($specificInfo):?>
+        <?php foreach ($specificInfo as $label => $value):?>
+            <?php if($label === (string) __('Print Billet')): ?>
+                <p>
+                    <a class="action tocart" target="_blank" style="
+                    color: #fff !important;
+                    background-color: #409e03;
+                    border-top: 10px solid #409e03;
+                    border-right: 15px solid #409e03;
+                    border-bottom: 10px solid #409e03;
+                    border-left: 15px solid #409e03;
+                    font-weight: bold;
+                    display: inline-block;
+                    border-radius: 2px;" href="<?php echo $value?>"><?php echo __('Print Billet') ?></a>
+                </p>
+                <?php continue;?>
+            <?php endif;?>
+        <?php endforeach; ?>
+    <?php endif;?>
+</dl>
+<?php echo $block->getChildHtml()?>
