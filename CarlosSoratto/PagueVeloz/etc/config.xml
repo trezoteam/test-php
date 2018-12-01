@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <billet>
+                <active>1</active>
+                <title>Billet PagueVeloz</title>
+                <model>CarlosSoratto\PagueVeloz\Model\Payment</model>
+                <expiration>5</expiration>
+                <email_api>cgsoratto@gmail.com</email_api>
+                <token_api>472960aa-7ef2-473a-9a10-4cb8a33e9400</token_api>
+            </billet>
+        </payment>
+    </default>
+</config>
