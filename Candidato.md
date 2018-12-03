@@ -1,9 +1,6 @@
-Nome Completo: Luiz Boça
+Nome Completo: Paulo Sérgio Pereira
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: web.paulosergio@gmail.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Telefone: (47) 99223-4745 - Recado
 
-Telefone: (44) 4444-4444
-
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
