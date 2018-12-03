@@ -1,67 +1,37 @@
 # Desafio para Vaga de Backend PHP
 
-## Vem ser #TrezoTeam!
-Nosso café está sempre fresquinho e ainda temos lanche a tarde! E sabemos que você tem muito a contribuir com a nossa equipe. ;)
-Faça parte da nossa família #TrezoTeam!
+## Teste realizado utilizando o framework Yii2
+
 
 ## Sobre o Teste:
 
-Desenvolver um sistema de **QUIZ**, utilizando apenas **PHP, Mysql ou PostgreSQL, HTML e CSS**.
-A utilização de um **framework PHP** é bem vinda.
-Requisitos do sistema:
-
-* Utilizar bootstrap (apenas para não deixar o layout feio, mas a avaliação do layout não será premissa)
-* O sistema terá um sistema administrativo para visualizar as respostas e cadastros de quiz.
-* > Terá controle de login e senha (pode ser um login e senha fixo: trezo|senha)
-* >> Deve-se informar login e senha para acesso administrativo no README.md
-* > Terá o cadastro do QUIZ com: name, description, created_at, updated_at
-* > Terá o cadastro das questões: subject, quiz_id, type, created_at, updated_at
-* > Terá o cadastro das opções de respostas (quando o type for multipla escolha): answer, is_correct, question_id, created_at, updated_at
-* > Terá visualização das respostas realizadas pelos usuários com o total de respostas, acertos e erros. (relatório)
-* O sistema terá uma home pública com a listagem de todos os QUIZ cadastrados
-* > Terá a página do QUIZ que todas as suas questões
-* >> Para iniciar o QUIZ o usuário deve informar nome e e-mail
-* > Ao iniciar o QUIZ, deverá ser registrado o horário de início do QUIZ
-* > Ao finalizar o QUIZ, deverá ser registrado o horário fim do QUIZ
-* > Terá que cadastrar cada resposta realizada pelo usuário (para poder visualizar em relatório administrativo)
-
-* **O Sistema deverá ser hospedado e configurado em um servidor a sua escolha**
-* Recomendamos hospedar na https://www.openshift.com/ que possui uma aplicação **FREE** a ser publicada
-* Nos envie o link publicado
+Todo o teste foi realizado em PHP, portanto algumas telas ficariam melhor com uso de Javascript.
 
 
-### Nossas espectativas:
+* O SGBD utilizado foi o PostgreSQL, porém, toda a estrutura do Banco foi feita com Migrations.
+Para utilizar Migrations, apenas o comando 'yii/migrate' é necessário
+* Visualmente, como sugerido, foi utilizado somente Bootstrap nativo do Yii2
+* Sobrescritas para URL's mais amigáveis realizadas(.htaccess) 
+* O fluxo do sistema para o USUÁRIO funciona da seguinte forma:
+* > Usuário escolhe um Quiz para respoder;
+* > Fornece Nome e E-mail;
+* > Reponde as perguntas(Múltipla Escolha ou Descursiva) e Envia;
+* > Mensagem de conclusão do Quiz é exibida.
+* O fluxo do sistema para o ADMIN funciona da seguinte forma:
+* > Admin cria novo Quiz;
+* > Uma tela com a possibilidade de inserir uma ou mais perguntas;
+* > Após inserir as perguntas, poderá selecionar uma pergunta e realizar a criação das respostas(Múltipla Escolha)
+* >> Para a área admin utilizar o Login: 'trezo' e Senha: '123456'
+* >> Área admin disponivel em 'SEVER/trezo/admin'
+* Uma API simples foi criada para exemplificação de exibição e cadastro de Informações:
+* > Uma controller a parte foi criada para este propósito;
+* > Apenas com autenticação via Bearer Token será possível realizar ações na API;
+* > Informações de autenticação de API presente na Área ADmin do sistema;
+* Apenas um relatório criado, visando abranger mais funcionalidades no sistema, como API
 
-Não esperamos que você faça tudo 100% ou que gaste dias para fazer o teste. Esperamos apenas um pouco de capricho pelo menos na lógica, funcionalidade (se há uma tela de cadastro, ela tem que funcionar), e organização do código.
-Não se preocupe com o LAYOUT, será o item menos importante da avaliação, apenas sugerimos utilizar o bootstrap para que também não fique feio demais, porém o principal é avaliar a aptidão lógica para resolver o problema anunciado.
-Na entrevista será questionado sobre as lógicas realizadas no sistema para reforçar o que foi desenvolvido.
-Oriente no README.md sobre informações necessárias para rodar o sistema, como por exemplo:
-* Rotas criadas
-* Como importar ou fazer o SEED de dados/tabelas do banco de dados
-* Login e senha do sistema admin ou como fazer para criar este acesso
+### Hospedagem
+* Sistema está hospedado em: www.notarweb.com.br/trezo
+* Área admin: www.notarweb.com.br/trezo/admin
+* Servidor Ububtu 16.04, Apache 2.4, PHP 7.0
 
-
-### O que avaliaremos:
-
-* Capricho no código
-* Seguir as indicações de PSR-FIG, ao menos de formatação de código
-* Se foi ou não utilizado algum Design Pattern
-* Aptidão Lógica para resolver problemas
-* Organização no código
-* Codar em inglês!*
-
-
-### Diferenciais:
-
-* PHPDocs nos métodos e classes
-* Melhores orientações ou explicações como foi construído a lógica do sistema
-* Demonstrar no sistema algum conhecimento de API
-* > Exemplo: Fazer com que o cadastro das respostas dos QUIZs aconteçam via API
-
-
-Criatividade para novas funcionalidades, não descritas acima, valerão pontos. Sinta-se a vontade nesse quesito para fluir suas habilidades.
-
-Para participar basta fazer um Fork desse repositório e dá-lhe, após a conclusão enviar um pull-request com suas informações adicionadas no arquivo **Candidato.md**.
-
-
-Boa sorte!
+* Obrigado!

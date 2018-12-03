@@ -1,9 +1,9 @@
-Nome Completo: Luiz Boça
+Nome Completo: Lucas Santos Ribeiro
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: lucassrjf@outlook.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: https://www.linkedin.com/in/lucas-santos-ribeiro-4b1554ba/
 
-Telefone: (44) 4444-4444
+Telefone: (32) 3234-2068 / (32) 99941-0035
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Portfólio (Opicional): www.notarweb.com.br / www.notarcondominio.com.br / www.notarjf.com.br
