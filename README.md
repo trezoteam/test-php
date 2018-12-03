@@ -1,3 +1,8 @@
+usuario e senha admin:
+usuario: trezo
+senha: asdasd
+
+
 # Desafio para Vaga de Backend PHP
 
 ## Vem ser #TrezoTeam!

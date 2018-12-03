@@ -1,9 +1,11 @@
-Nome Completo: Luiz Boça
+Nome Completo: Anderson Alan Sauberlich
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: anderson.alan@feralten.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: https://www.linkedin.com/in/anderson-alan-sauberlich-8b428b82/
 
-Telefone: (44) 4444-4444
+Telefone: (47) 3378-1685
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Portfólio: (fiz esse site) https://www.feralten.com.br
+
+Github: https://github.com/Anderson-Alan-Sauberlich
