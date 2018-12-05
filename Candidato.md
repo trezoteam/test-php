@@ -1,9 +1,7 @@
-Nome Completo: Luiz Boça
+Nome Completo: Alessandro Alan Alexandre
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: alesandroalan@gmail.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: https://www.linkedin.com/in/alessandro-alan-alexandre-9a289a95
 
-Telefone: (44) 4444-4444
-
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Telefone: (47) 99201-6059
