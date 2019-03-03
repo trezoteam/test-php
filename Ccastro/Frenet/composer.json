@@ -1,0 +1,24 @@
+{
+    "name": "ccastro/frenet",
+    "description": "Frenet",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "carolcastro@gmail.com",
+            "name": "Carol Castro"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ccastro\\Frenet\\": ""
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.2.0"
+    }
+}

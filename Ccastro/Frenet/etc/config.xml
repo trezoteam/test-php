@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <frenet>
+                <active>1</active>
+                <add_delivery_days>0</add_delivery_days>
+                <key>testando_key</key>
+                <password>YOsap9Y2yDAUVJqAOQGtJA==</password>
+                <token>8713E4FBR8EFCR4D61R9FDER4045FBF8721C</token>
+                <default_dimensional_height>2</default_dimensional_height>
+                <default_dimensional_width>11</default_dimensional_width>
+                <default_dimensional_length>16</default_dimensional_length>
+                <max_package_weight>1000</max_package_weight>
+                <model>Ccastro\Frenet\Model\Carrier\Frenet</model>
+                <sallowspecific>0</sallowspecific>
+                <shipping_message>%s - Average %d day</shipping_message>
+                <title>Frenet</title>
+            </frenet>
+        </carriers>
+    </default>
+</config>

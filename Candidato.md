@@ -1,9 +1,7 @@
-Nome Completo: Luiz Boça
+Nome Completo: Carolina Castro
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: carolcastro@gmail.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: http://linkedin.com/carol-castro
 
-Telefone: (44) 4444-4444
-
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Telefone: (61) 99914-1978
