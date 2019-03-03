@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="carriers">
+            <group id="frenet" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Frenet</label>
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Title</label>
+                </field>
+                <field id="key" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Key</label>
+                    <comment><![CDATA[Key from your fretnet dashboard.]]></comment>
+                </field>
+                <field id="password" translate="label" type="obscure" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Password</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <comment><![CDATA[Password from your fretnet dashboard.]]></comment>
+                </field>
+                <field id="token" translate="label" type="obscure" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Token</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <comment><![CDATA[Token from your fretnet dashboard.]]></comment>
+                </field>
+                <field id="max_package_weight" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Maximum Package Weight (Please consult for maximum supported shipping weight)</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+                <field id="add_delivery_days" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Add extra days to delivery date</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[The amount of days configured will be added to the shipping data retrieved from fretnet.]]></comment>
+                </field>
+                <field id="default_dimensional_height" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Default Dimensional Height</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[This value will be used if height is not defined in product.]]></comment>
+                </field>
+                <field id="default_dimensional_width" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Default Dimensional Width</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[This value will be used if width is not defined in product.]]></comment>
+                </field>
+                <field id="default_dimensional_length" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Default Dimensional Length</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment><![CDATA[This value will be used if length is not defined in product.]]></comment>
+                </field>
+                <field id="shipping_message" translate="label" type="textarea" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shipping days message</label>
+                </field>
+                <field id="specificerrmsg" translate="label" type="textarea" sortOrder="170" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Displayed Error Message</label>
+                </field>
+                <field id="sallowspecific" translate="label" type="select" sortOrder="180" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Ship to Applicable Countries</label>
+                    <frontend_class>shipping-applicable-country</frontend_class>
+                    <source_model>Magento\Shipping\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="190" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Ship to Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Debug</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="showmethod" translate="label" type="select" sortOrder="210" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Show Method if Not Applicable</label>
+                    <frontend_class>shipping-skip-hide</frontend_class>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="220" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
