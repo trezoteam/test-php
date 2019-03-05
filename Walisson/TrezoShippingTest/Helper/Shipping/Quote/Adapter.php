@@ -59,7 +59,7 @@ class Adapter extends \Magento\Framework\App\Helper\AbstractHelper
             $storePostcode = $request->getStorePostcode();
 
             if (!$items || !$destPostcode || !$storePostcode) {
-                $this->messageManager->addErrorMessage(__('To calculate shipping we need items, store and destination postal code.'));
+                $this->_logger->error(strtoupper(Config::METHOD_CODE) . ' - ERROR: ' . __('To calculate shipping we need items, store and destination postal code.'));
                 return false;
             }
 
@@ -70,7 +70,7 @@ class Adapter extends \Magento\Framework\App\Helper\AbstractHelper
                 'ShippingItemArray' => $this->getItems($items)
             ];
         } catch (LocalizedException $e) {
-            $this->messageManager->addErrorMessage(__('Something went wrong trying to generate data to calculate the shipping value.'));
+            $this->_logger->error(strtoupper(Config::METHOD_CODE) . ' - ERROR: ' . __('Something went wrong trying to generate data to calculate the shipping value.') . 'STACK_TRACE' . $e->getTraceAsString());
             return false;
         }
         return $params;
@@ -94,8 +94,9 @@ class Adapter extends \Magento\Framework\App\Helper\AbstractHelper
             $apiItems[] =
                 [
                     'Weight' => $item->getWeight() ?? 0.3,
-                    'Length' => $item->getLength() ?? 100,
-                    'Height' => $item->getHeight() ?? 100,
+                    'Length' => $item->getLength() ?? 10,
+                    'Height' => $item->getHeight() ?? 10,
+                    'Width' => $item->getWidth() ?? 10,
                     'SKU' => (string)$item->getSku(),
                     'Quantity' => $item->getQty()
                 ];

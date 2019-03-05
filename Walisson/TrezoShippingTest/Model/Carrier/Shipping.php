@@ -20,6 +20,7 @@ use Walisson\TrezoShippingTest\Api\Data\ConfigInterface;
  */
 class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements \Magento\Shipping\Model\Carrier\CarrierInterface
 {
+
     /** @var string */
     protected $_code = ConfigInterface::METHOD_CODE;
 
@@ -99,6 +100,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
     {
         $storePostcode = $this->getStorePostcode();
         if (!$storePostcode) {
+            $this->_logger->error(strtoupper(ConfigInterface::METHOD_CODE) .' - MESSAGE: '. __('Store postal code not found.'));
             return false;
         }
 
@@ -106,23 +108,43 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
         $params = $this->adapter->getParams($request);
 
         if (!$params) {
+            $this->_logger->error(strtoupper(ConfigInterface::METHOD_CODE) .' - MESSAGE: '. __('Cannot get params to do the api request.'));
             return false;
         }
 
         $result = json_decode($this->provider->postApi(Adapter::SHIPPING_QUOTE_ENDPOINT, json_encode($params)));
-        $shippingPrice = false;
-        if ($result && !$result->error) {
-            $shippingPrice = $this->getShippingAmount($result->ShippingSevicesArray);
+        if ($result && $result->error) {
+            $this->_logger->error(strtoupper(ConfigInterface::METHOD_CODE) .' - MESSAGE: '. $result->error_message . ' STACK_TRACE: ' .$result->StackTrace);
+            return false;
         }
+
+        $shippingPrice = $this->getShippingAmount($result->ShippingSevicesArray);
 
         $deliveryDays = $this->getConfigData('delivery_additional_days');
         $deliveryDays += $this->getDeliveryTimeAmount($result->ShippingSevicesArray);
 
-        $this->methodName = $this->getConfigData('name') . ' - ' . __('Delivery time (in days): ') . $deliveryDays;
+        $this->methodName = $this->getCarrierAndService($result) . ' - ' . __('Delivery time (in days): ') . $deliveryDays;
 
         $shippingPrice = $this->getFinalPriceWithHandlingFee($shippingPrice);
 
         return $shippingPrice;
+    }
+
+    /**
+     * Get Carrier name and service
+     *
+     * @param $result
+     * @return false|string
+     */
+    private function getCarrierAndService($result)
+    {
+        if (!isset($result->ShippingSevicesArray) || !is_array($result->ShippingSevicesArray) || !count($result->ShippingSevicesArray)) {
+            return $this->getConfigData('name');
+        }
+
+        $item = $result->ShippingSevicesArray[0];
+        return $item->Carrier .'/'. $item->ServiceDescription;
+
     }
 
     /**
@@ -134,6 +156,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
     private function getShippingAmount($items)
     {
         if (!$items) {
+            $this->_logger->error(strtoupper(ConfigInterface::METHOD_CODE) .' - ERROR: '. __('Items not found to get total amount.'));
             return false;
         }
 
@@ -188,6 +211,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
 
         $amount = $this->getShippingPrice($request);
         if (!$amount) {
+            $this->_logger->error(strtoupper(ConfigInterface::METHOD_CODE) .' - ERROR: '. __('Cannot found the quote total amount.'));
             return false;
         }
 

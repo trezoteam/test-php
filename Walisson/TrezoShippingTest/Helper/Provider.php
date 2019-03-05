@@ -15,6 +15,7 @@ use Walisson\TrezoShippingTest\Helper\Config;
  */
 class Provider extends AbstractHelper
 {
+
     /** @var mixed */
     protected $apiToken;
 
@@ -59,6 +60,7 @@ class Provider extends AbstractHelper
         curl_setopt($ch, CURLOPT_URL, $this->apiUrl . $endpoint);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
@@ -85,12 +87,14 @@ class Provider extends AbstractHelper
             $outputArray['error'] = false;
             $outputArray['status_code'] = $statusCode;
             if ($statusCode != 200) {
+                $this->_logger->info(strtoupper(Config::METHOD_CODE) . ' - ERROR: ' . __('Something went wrong over the API request.'));
                 $outputArray['error'] = true;
                 $outputArray['error_message'] = __('Something went wrong over the API request.');
             }
         } catch (LocalizedException $e) {
+            $this->_logger->error(strtoupper(Config::METHOD_CODE) . ' - ERROR: ' . __('Something went wrong over the API request.') . ' STACK_TRACE: ' . $e->getTraceAsString());
             $outputArray = ['error' => true, 'error_message' => __('Something went wrong over the API request.')];
-            $outputArray['status_code'] = 404;
+            $outputArray['status_code'] = 500;
 
         }
         return json_encode($outputArray);
