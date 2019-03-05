@@ -1,9 +1,8 @@
-Nome Completo: Luiz Boça
+Nome Completo: Walisson Costa Ferreira
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: walisson.ferreira@gmail.com
 
-Linkedin: http://linkedin.com/luiz.boca
+Linkedin: www.linkedin.com/in/walisson-costa-ferreira
 
-Telefone: (44) 4444-4444
+Telefone: (34) 99995-2206
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
