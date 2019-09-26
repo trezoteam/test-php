@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <default>
+        <frenet_general>
+            <general>
+                <mod_status>1</mod_status>
+            </general>
+        </frenet_general>
+        <frenet_api>
+            <api>
+                <api_key>testando_key</api_key>
+                <api_pass>YOsap9Y2yDAUVJqAOQGtJA==</api_pass>
+                <api_token>8713E4FBR8EFCR4D61R9FDER4045FBF8721C</api_token>
+            </api>
+        </frenet_api>
+    </default>
+</config>

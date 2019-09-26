@@ -1,0 +1,142 @@
+<?
+    $this->inlineScript()
+        ->appendFile($this->basePath('js/controller/admin/question.js'));
+
+?>
+<section ng-app="AppAngular" ng-controller="adminQuizController">
+
+    <?php foreach($arrTypes as $arrType): ?>
+    <span ng-init="setArrType('<?php echo $arrType['name'];?>',<?php echo $arrType['id'];?>)"/>
+    <?php endforeach;?>
+    <span ng-init="question_id = <?php echo $id;?>"/>
+    <span ng-init="loadQuestion()"/>
+
+    <div class="row-fluid">
+        <div class="col-md-6">
+            <form action="" method="POST" role="form">
+                <legend>Question</legend>
+
+                <div class="form-group">
+                    <label for="">Subject</label>
+                    <textarea
+                        type="text"
+                        class="form-control"
+                        id=""
+                        ng-model="formQuestion.subject"
+                        placeholder="Subject"
+                        rows="8">
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Type</label>
+
+                    <select
+                        ng-model="formQuestion.type_id"
+                        class="form-control"
+                        id=""
+                        ng-options="value.id as value.name for value in arrType">
+
+                    </select>
+                </div>
+
+
+
+                <button type="button" class="btn btn-primary" ng-click="saveQuestion()">Save</button>
+                <button type="button" class="btn btn-warning">Clear</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="row-fluid">
+        <div class="col-md-12">
+            <h3>Questions</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <th>#</th>
+                    <th>Subject</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="(key, value) in arrQuestion">
+                        <td>{{value.id}}</td>
+                        <td>{{value.subject}}</td>
+                        <td>{{value.type_description}}</td>
+                        <td>
+                            <a
+                                class="btn btn-warning btn-sm"
+                                data-toggle="modal"
+                                href='#questionOption'
+                                ng-click="loadOptionQuestion(value)"
+                                ng-show="value.type_description=='Multipla escolha'?true:false;">
+                                Options
+                            </a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="questionOption">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">add options</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row mar-all">
+                    <div class="col-md-6">
+                        <label>List answer</label>
+                        <table class="table table-bordered">
+                            <thead>
+                                <th>#</th>
+                                <th>Answer</th>
+                                <th>Remove</th>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="(key, value) in arrQuestionOption">
+                                    <td>{{value.id}}</td>
+                                    <td>{{value.answer}}</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-danger" ng-click="removeAsw(value,$index)">Remove</button>
+                                        <button class="btn btn-xs" ng-class="(value.is_correct=='1')?'btn-success':'btn-default'"  ng-click="isCorrect(value,$index)">Is correct</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6">
+
+
+                        <div class="form-group">
+                            <label >Answer:</label>
+                            <div class="input-group">
+                                <input type="hidden" class="form-control" ng-model="objQuestionOption.id">
+                                <input type="hidden" class="form-control" ng-model="objQuestionOption.question_id">
+                                <input type="text" class="form-control" ng-model="objQuestionOption.answer" placeholder="Description your answer">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary" ng-click="addQuestionOption()">+</button>
+                                </span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+

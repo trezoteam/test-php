@@ -1,9 +1,9 @@
-Nome Completo: Luiz Boça
+Nome Completo: Felipe Oliveira
 
-E-mail: luiz.boca@clubedosminigameiros.com.br
+E-mail: felipe.devel@gmail.com
 
 Linkedin: http://linkedin.com/luiz.boca
 
-Telefone: (44) 4444-4444
+Telefone: (47) 99746-6287
 
-Portfólio (Opicional): clubedosminigameiros.com.br/portfolio ou github.com/luizbocaminigameiro
+Portifolio: http://www.chipsetdesenvolvimento.com
